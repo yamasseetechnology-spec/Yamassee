@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portfolio | Yamassee Technology</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⬡</text></svg>">
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Exo+2:wght@300;400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -92,8 +93,8 @@ section::before{content:'';position:absolute;top:0;left:50%;transform:translateX
 .logo-front,.logo-back{position:absolute;inset:0;backface-visibility:hidden;display:flex;align-items:center;justify-content:center;flex-direction:column}
 .logo-front{background:linear-gradient(135deg,#040A14,#081828)}
 .logo-back{background:linear-gradient(135deg,#081828,#0D2137);transform:rotateY(180deg);padding:20px}
-.logo-svg{width:120px;height:120px;transition:transform .3s}
-.logo-card:hover .logo-svg{transform:scale(1.1)}
+.logo-svg,.logo-img{width:120px;height:120px;transition:transform .3s;object-fit:contain}
+.logo-card:hover .logo-svg,.logo-card:hover .logo-img{transform:scale(1.1)}
 .logo-name{font-family:'Orbitron',monospace;font-size:12px;color:var(--gold);margin-top:16px;letter-spacing:2px}
 .logo-variant{font-size:12px;color:var(--text);margin-bottom:8px;font-weight:600}
 .logo-desc{font-size:11px;color:var(--dim);line-height:1.6;text-align:center}
@@ -262,223 +263,129 @@ footer{padding:50px 48px;border-top:1px solid rgba(255,184,0,.06);text-align:cen
     <p class="sec-sub">Hover to preview variations • Click to flip for details</p>
   </div>
   <div class="logo-grid">
-    <!-- Logo 1: Shield Mark -->
+    <!-- Logo 1 -->
     <div class="logo-card">
       <div class="logo-flip">
         <div class="logo-front">
-          <svg class="logo-svg" viewBox="0 0 100 100">
-            <defs>
-              <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#FF6B00"/>
-                <stop offset="100%" stop-color="#FFB800"/>
-              </linearGradient>
-            </defs>
-            <path d="M50 5 L90 20 L90 50 C90 75 70 90 50 95 C30 90 10 75 10 50 L10 20 Z" fill="rgba(255,184,0,0.1)" stroke="url(#g1)" stroke-width="2"/>
-            <path d="M50 20 L75 30 L75 50 C75 65 62 75 50 78 C38 75 25 65 25 50 L25 30 Z" fill="rgba(255,184,0,0.15)" stroke="url(#g1)" stroke-width="1"/>
-            <text x="50" y="55" text-anchor="middle" fill="url(#g1)" font-family="system-ui" font-weight="900" font-size="20">YT</text>
-          </svg>
-          <div class="logo-name">SHIELD MARK</div>
+          <img class="logo-img" src="portfolio media/logo designs/89dba474-43fd-4204-ba98-bec48b932a0d-removebg-preview.png" alt="Yamassee Tech">
+          <div class="logo-name">YAMASSEE TECH</div>
         </div>
         <div class="logo-back">
-          <div class="logo-variant">Gold Gradient Shield</div>
-          <div class="logo-desc">Bold shield design with gradient typography. Perfect for security, tech, and corporate brands seeking authority.</div>
-          <div class="logo-variant" style="margin-top:12px">Colors: #FF6B00 → #FFB800</div>
+          <div class="logo-variant">Primary Brand</div>
+          <div class="logo-desc">Main brand logo with transparent background. Full color and monochrome variants available.</div>
+          <div class="logo-variant" style="margin-top:12px">Format: PNG</div>
         </div>
       </div>
       <div class="logo-flip-hint">Click to flip ↻</div>
     </div>
 
-    <!-- Logo 2: Hex Node -->
+    <!-- Logo 2 -->
     <div class="logo-card">
       <div class="logo-flip">
         <div class="logo-front">
-          <svg class="logo-svg" viewBox="0 0 100 100">
-            <defs>
-              <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#00D4FF"/>
-                <stop offset="100%" stop-color="#0050CC"/>
-              </linearGradient>
-            </defs>
-            <polygon points="50,5 85,25 85,75 50,95 15,75 15,25" fill="rgba(0,212,255,0.08)" stroke="url(#g2)" stroke-width="2"/>
-            <polygon points="50,20 70,32 70,68 50,80 30,68 30,32" fill="rgba(0,212,255,0.1)" stroke="url(#g2)" stroke-width="1"/>
-            <circle cx="50" cy="50" r="12" fill="url(#g2)"/>
-            <circle cx="50" cy="50" r="5" fill="#fff" opacity="0.3"/>
-          </svg>
-          <div class="logo-name">HEX NODE</div>
+          <img class="logo-img" src="portfolio media/logo designs/ChatGPT Image Jan 3, 2026, 11_58_15 PM.png" alt="AI Logo">
+          <div class="logo-name">AI ASSISTANT</div>
         </div>
         <div class="logo-back">
-          <div class="logo-variant">Tech Hexagon</div>
-          <div class="logo-desc">Modern hexagonal system with center node. Ideal for blockchain, tech startups, and data companies.</div>
-          <div class="logo-variant" style="margin-top:12px">Colors: #00D4FF → #0050CC</div>
+          <div class="logo-variant">AI Assistant Logo</div>
+          <div class="logo-desc">Modern AI assistant branding with gradient tech aesthetics.</div>
+          <div class="logo-variant" style="margin-top:12px">Style: Gradient</div>
         </div>
       </div>
       <div class="logo-flip-hint">Click to flip ↻</div>
     </div>
 
-    <!-- Logo 3: Arrow Forward -->
+    <!-- Logo 3 -->
     <div class="logo-card">
       <div class="logo-flip">
         <div class="logo-front">
-          <svg class="logo-svg" viewBox="0 0 100 100">
-            <defs>
-              <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#00E87A"/>
-                <stop offset="100%" stop-color="#00A854"/>
-              </linearGradient>
-            </defs>
-            <circle cx="50" cy="50" r="40" fill="rgba(0,232,122,0.1)" stroke="url(#g3)" stroke-width="2"/>
-            <circle cx="50" cy="50" r="28" fill="rgba(0,232,122,0.05)" stroke="rgba(0,232,122,0.3)" stroke-width="1"/>
-            <path d="M30 50 L60 50 M50 35 L65 50 L50 65" fill="none" stroke="url(#g3)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="30" cy="50" r="6" fill="url(#g3)"/>
-          </svg>
-          <div class="logo-name">APEX ARROW</div>
+          <img class="logo-img" src="portfolio media/logo designs/ChatGPT Image Jan 20, 2026, 11_52_47 PM.png" alt="Creative Logo">
+          <div class="logo-name">CREATIVE</div>
         </div>
         <div class="logo-back">
-          <div class="logo-variant">Motion Forward</div>
-          <div class="logo-desc">Dynamic forward motion symbol. Perfect for logistics, delivery, and growth-oriented businesses.</div>
-          <div class="logo-variant" style="margin-top:12px">Colors: #00E87A → #00A854</div>
+          <div class="logo-variant">Creative Studio</div>
+          <div class="logo-desc">Dynamic creative branding for studios and agencies. Modern, bold aesthetic.</div>
+          <div class="logo-variant" style="margin-top:12px">Style: Bold</div>
         </div>
       </div>
       <div class="logo-flip-hint">Click to flip ↻</div>
     </div>
 
-    <!-- Logo 4: Diamond Gem -->
+    <!-- Logo 4 -->
     <div class="logo-card">
       <div class="logo-flip">
         <div class="logo-front">
-          <svg class="logo-svg" viewBox="0 0 100 100">
-            <defs>
-              <linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#FFB800"/>
-                <stop offset="100%" stop-color="#FF6B00"/>
-              </linearGradient>
-            </defs>
-            <polygon points="50,5 90,25 80,85 20,85 10,25" fill="none" stroke="url(#g4)" stroke-width="2"/>
-            <polygon points="50,5 90,25 50,25" fill="rgba(255,184,0,0.3)"/>
-            <polygon points="10,25 50,25 50,50" fill="rgba(255,255,255,0.1)"/>
-            <polygon points="90,25 80,85 50,50" fill="rgba(255,107,0,0.2)"/>
-            <line x1="50" y1="5" x2="50" y2="85" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-            <line x1="10" y1="25" x2="90" y2="25" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-          </svg>
-          <div class="logo-name">GEM CUT</div>
+          <img class="logo-img" src="portfolio media/logo designs/blank-bird-logo-design-idea-png-15.png" alt="Bird Logo">
+          <div class="logo-name">BIRD MARK</div>
         </div>
         <div class="logo-back">
-          <div class="logo-variant">Luxury Diamond</div>
-          <div class="logo-desc">Refined diamond form with faceted crystal. Ideal for luxury brands, jewelry, and premium services.</div>
-          <div class="logo-variant" style="margin-top:12px">Colors: #FFB800 → #FF6B00</div>
+          <div class="logo-variant">Bird Mascot</div>
+          <div class="logo-desc">Custom bird mascot design. Great for sports teams and dynamic brands.</div>
+          <div class="logo-variant" style="margin-top:12px">Type: Mascot</div>
         </div>
       </div>
       <div class="logo-flip-hint">Click to flip ↻</div>
     </div>
 
-    <!-- Logo 5: Circuit X -->
+    <!-- Logo 5 -->
     <div class="logo-card">
       <div class="logo-flip">
         <div class="logo-front">
-          <svg class="logo-svg" viewBox="0 0 100 100">
-            <defs>
-              <linearGradient id="g5" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#FF6B00"/>
-                <stop offset="100%" stop-color="#FFB800"/>
-              </linearGradient>
-            </defs>
-            <rect x="10" y="10" width="80" height="80" rx="12" fill="rgba(255,107,0,0.08)" stroke="url(#g5)" stroke-width="2"/>
-            <circle cx="50" cy="50" r="18" fill="none" stroke="url(#g5)" stroke-width="3"/>
-            <circle cx="50" cy="50" r="8" fill="url(#g5)"/>
-            <line x1="10" y1="50" x2="32" y2="50" stroke="url(#g5)" stroke-width="2" opacity="0.8"/>
-            <line x1="68" y1="50" x2="90" y2="50" stroke="url(#g5)" stroke-width="2" opacity="0.8"/>
-            <line x1="50" y1="10" x2="50" y2="32" stroke="url(#g5)" stroke-width="2" opacity="0.8"/>
-            <line x1="50" y1="68" x2="50" y2="90" stroke="url(#g5)" stroke-width="2" opacity="0.8"/>
-            <circle cx="10" cy="50" r="5" fill="url(#g5)"/>
-            <circle cx="90" cy="50" r="5" fill="url(#g5)"/>
-            <circle cx="50" cy="10" r="5" fill="url(#g5)"/>
-            <circle cx="50" cy="90" r="5" fill="url(#g5)"/>
-          </svg>
-          <div class="logo-name">CIRCUIT X</div>
+          <img class="logo-img" src="portfolio media/logo designs/pngtree-rainbow-colored-abstract-shaped-number-eight-logo-png-image_12382123.png" alt="Abstract Logo">
+          <div class="logo-name">ABSTRACT</div>
         </div>
         <div class="logo-back">
-          <div class="logo-variant">Digital Circuit</div>
-          <div class="logo-desc">Connected network icon with central hub. Perfect for tech, AI, and connected platforms.</div>
-          <div class="logo-variant" style="margin-top:12px">Colors: #FF6B00 → #FFB800</div>
+          <div class="logo-variant">Abstract 8</div>
+          <div class="logo-desc">Rainbow colored abstract logo. Perfect for creative and colorful brands.</div>
+          <div class="logo-variant" style="margin-top:12px">Style: Colorful</div>
         </div>
       </div>
       <div class="logo-flip-hint">Click to flip ↻</div>
     </div>
 
-    <!-- Logo 6: Mono Block -->
+    <!-- Logo 6 -->
     <div class="logo-card">
       <div class="logo-flip">
         <div class="logo-front">
-          <svg class="logo-svg" viewBox="0 0 100 100">
-            <defs>
-              <linearGradient id="g6" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#7B2FFF"/>
-                <stop offset="100%" stop-color="#00D4FF"/>
-              </linearGradient>
-            </defs>
-            <rect x="8" y="8" width="84" height="84" rx="18" fill="rgba(123,47,255,0.1)" stroke="url(#g6)" stroke-width="2"/>
-            <rect x="22" y="22" width="56" height="56" rx="8" fill="rgba(123,47,255,0.08)" stroke="rgba(123,47,255,0.3)" stroke-width="1"/>
-            <text x="50" y="62" text-anchor="middle" fill="url(#g6)" font-family="system-ui" font-weight="900" font-size="28">YT</text>
-          </svg>
-          <div class="logo-name">MONO BLOCK</div>
+          <img class="logo-img" src="portfolio media/logo designs/pngtree-environmental-protection-natural-environment-logo-vector-png-image_7124553.png" alt="Eco Logo">
+          <div class="logo-name">ECO NATURE</div>
         </div>
         <div class="logo-back">
-          <div class="logo-variant">Purple Monospace</div>
-          <div class="logo-desc">Bold block mark with purple-to-cyan gradient. Modern and tech-forward for creative agencies.</div>
-          <div class="logo-variant" style="margin-top:12px">Colors: #7B2FFF → #00D4FF</div>
+          <div class="logo-variant">Environmental</div>
+          <div class="logo-desc">Nature and eco-friendly branding. Ideal for green and sustainable brands.</div>
+          <div class="logo-variant" style="margin-top:12px">Type: Nature</div>
         </div>
       </div>
       <div class="logo-flip-hint">Click to flip ↻</div>
     </div>
 
-    <!-- Logo 7: Crown Royal -->
+    <!-- Logo 7 -->
     <div class="logo-card">
       <div class="logo-flip">
         <div class="logo-front">
-          <svg class="logo-svg" viewBox="0 0 100 100">
-            <defs>
-              <linearGradient id="g7" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#FFD700"/>
-                <stop offset="100%" stop-color="#FF8C00"/>
-              </linearGradient>
-            </defs>
-            <path d="M20 70 L30 30 L50 20 L70 30 L80 70 Z" fill="rgba(255,215,0,0.15)" stroke="url(#g7)" stroke-width="2"/>
-            <path d="M25 68 L35 35 L50 28 L65 35 L75 68" fill="none" stroke="url(#g7)" stroke-width="1.5"/>
-            <circle cx="50" cy="35" r="8" fill="url(#g7)"/>
-            <circle cx="30" cy="45" r="5" fill="url(#g7)" opacity="0.7"/>
-            <circle cx="70" cy="45" r="5" fill="url(#g7)" opacity="0.7"/>
-          </svg>
-          <div class="logo-name">CROWN ELITE</div>
+          <img class="logo-img" src="portfolio media/logo designs/Picsart_25-05-04_00-21-51-696.png" alt="Picsart Logo">
+          <div class="logo-name">PICSART</div>
         </div>
         <div class="logo-back">
-          <div class="logo-variant">Royal Crown</div>
-          <div class="logo-desc">Premium crown design for luxury brands, VIP services, and exclusive experiences.</div>
-          <div class="logo-variant" style="margin-top:12px">Colors: #FFD700 → #FF8C00</div>
+          <div class="logo-variant">Graphic Design</div>
+          <div class="logo-desc">Stylized graphic logo. Great for design agencies and creative tools.</div>
+          <div class="logo-variant" style="margin-top:12px">Style: Graphic</div>
         </div>
       </div>
       <div class="logo-flip-hint">Click to flip ↻</div>
     </div>
 
-    <!-- Logo 8: Abstract Y -->
+    <!-- Logo 8 -->
     <div class="logo-card">
       <div class="logo-flip">
         <div class="logo-front">
-          <svg class="logo-svg" viewBox="0 0 100 100">
-            <defs>
-              <linearGradient id="g8" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#FF3366"/>
-                <stop offset="100%" stop-color="#FF6B00"/>
-              </linearGradient>
-            </defs>
-            <circle cx="50" cy="50" r="42" fill="rgba(255,51,102,0.08)" stroke="url(#g8)" stroke-width="2"/>
-            <path d="M25 25 L50 50 L75 25 M50 50 L50 85" fill="none" stroke="url(#g8)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <div class="logo-name">Y MODERN</div>
+          <img class="logo-img" src="portfolio media/logo designs/ChatGPT Image Jan 13, 2026, 10_31_28 PM.png" alt="Tech Logo">
+          <div class="logo-name">TECH MARK</div>
         </div>
         <div class="logo-back">
-          <div class="logo-variant">Abstract Y</div>
-          <div class="logo-desc">Stylized Y mark with bold strokes. Dynamic and youthful for modern brands.</div>
-          <div class="logo-variant" style="margin-top:12px">Colors: #FF3366 → #FF6B00</div>
+          <div class="logo-variant">Tech Branding</div>
+          <div class="logo-desc">Tech-forward logo design. Perfect for startups and technology companies.</div>
+          <div class="logo-variant" style="margin-top:12px">Style: Tech</div>
         </div>
       </div>
       <div class="logo-flip-hint">Click to flip ↻</div>
@@ -494,28 +401,28 @@ footer{padding:50px 48px;border-top:1px solid rgba(255,184,0,.06);text-align:cen
   </div>
   <div class="logo-anim-grid">
     <div class="anim-card">
-      <video class="anim-thumb" src="portfolio media/logo animations/Completed Intro.mp4" muted loop playsinline></video>
+      <video class="anim-thumb" src="portfolio media/logo-animations/Completed Intro.mp4" muted loop playsinline></video>
       <div class="anim-info">
         <div class="anim-title">Brand Intro Animation</div>
         <div class="anim-tag">Opening Sequence</div>
       </div>
     </div>
     <div class="anim-card">
-      <video class="anim-thumb" src="portfolio media/logo animations/Completed Outro.mp4" muted loop playsinline></video>
+      <video class="anim-thumb" src="portfolio media/logo-animations/Completed Outro.mp4" muted loop playsinline></video>
       <div class="anim-info">
         <div class="anim-title">Brand Outro Animation</div>
         <div class="anim-tag">Closing Sequence</div>
       </div>
     </div>
     <div class="anim-card">
-      <video class="anim-thumb" src="portfolio media/logo animations/Output.mp4" muted loop playsinline></video>
+      <video class="anim-thumb" src="portfolio media/logo-animations/Output.mp4" muted loop playsinline></video>
       <div class="anim-info">
         <div class="anim-title">Output Animation</div>
         <div class="anim-tag">Full Render</div>
       </div>
     </div>
     <div class="anim-card">
-      <video class="anim-thumb" src="portfolio media/logo animations/Render.mp4" muted loop playsinline></video>
+      <video class="anim-thumb" src="portfolio media/logo-animations/Render.mp4" muted loop playsinline></video>
       <div class="anim-info">
         <div class="anim-title">Render Animation</div>
         <div class="anim-tag">Loop Ready</div>
@@ -531,16 +438,16 @@ footer{padding:50px 48px;border-top:1px solid rgba(255,184,0,.06);text-align:cen
     <p class="sec-sub">Click to view full-screen preview</p>
   </div>
   <div class="flyer-grid">
-    <div class="flyer-card" data-type="video" data-src="portfolio media/Digital Flyers/Comp 1.mp4">
-      <video class="flyer-thumb" src="portfolio media/Digital Flyers/Comp 1.mp4" muted loop playsinline></video>
+    <div class="flyer-card" data-type="video" data-src="portfolio media/digital-flyers/Comp 1.mp4">
+      <video class="flyer-thumb" src="portfolio media/digital-flyers/Comp 1.mp4" muted loop playsinline></video>
       <div class="flyer-overlay">
         <div class="flyer-title">Summer Promo 2026</div>
         <div class="flyer-cat">Digital Flyer • Animation</div>
       </div>
       <div class="flyer-play">▶</div>
     </div>
-    <div class="flyer-card" data-type="video" data-src="portfolio media/Digital Flyers/Comp 2.mp4">
-      <video class="flyer-thumb" src="portfolio media/Digital Flyers/Comp 2.mp4" muted loop playsinline></video>
+    <div class="flyer-card" data-type="video" data-src="portfolio media/digital-flyers/Comp 2.mp4">
+      <video class="flyer-thumb" src="portfolio media/digital-flyers/Comp 2.mp4" muted loop playsinline></video>
       <div class="flyer-overlay">
         <div class="flyer-title">Event Promotion</div>
         <div class="flyer-cat">Digital Flyer • Animation</div>
@@ -561,12 +468,12 @@ footer{padding:50px 48px;border-top:1px solid rgba(255,184,0,.06);text-align:cen
     <div class="demo-card">
       <div class="demo-preview">
         <div class="demo-glow"></div>
-        <iframe class="demo-frame" src="portfolio media/interactive demos/crm/crm-patch/offline crm.html"></iframe>
+        <iframe class="demo-frame" srcdoc="<!DOCTYPE html><html><head><meta charset='UTF-8'><style>*{box-sizing:border-box;margin:0;padding:0}body{background:#0d1525;font-family:system-ui,sans-serif;color:#c5d4e8;padding:12px;height:220px;overflow:hidden}.crm{background:linear-gradient(145deg,#071018,#0d1825);border-radius:8px;height:100%;display:flex;flex-direction:column}.hdr{display:flex;justify-content:space-between;align-items:center;padding:10px 12px;border-bottom:1px solid rgba(0,212,255,.12)}.logo{font-size:11px;font-weight:700;letter-spacing:2px;background:linear-gradient(90deg,#00D4FF,#0080ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.live{font-size:8px;color:#00e87a;display:flex;align-items:center;gap:4px}.dot{width:4px;height:4px;background:#00e87a;border-radius:50%;animation:blink 1.5s infinite}@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}.body{display:grid;grid-template-columns:70px 1fr;flex:1;overflow:hidden}.sid{padding:8px 4px;display:flex;flex-direction:column;gap:2px}.si{padding:6px 8px;font-size:9px;color:#5a7088;border-radius:4px;cursor:pointer;transition:all .2s}.si:hover,.si.on{background:rgba(0,212,255,.1);color:#00d4ff}.si.on{font-weight:600}.sect{font-size:7px;color:#3a5068;letter-spacing:1px;text-transform:uppercase;margin:8px 0 4px}.main{padding:8px;overflow-y:auto}.kpi-row{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:10px}.kpi{background:rgba(0,0,0,.3);border-radius:4px;padding:6px}.kpi-val{font-size:12px;font-weight:700}.kpi.blue .kpi-val{color:#00d4ff}.kpi.amber .kpi-val{color:#ffb800}.kpi.green .kpi-val{color:#00e87a}.kpi-lbl{font-size:6px;color:#607090;margin-top:2px}.row{display:flex;gap:6px;padding:6px;background:rgba(255,255,255,.03);border-radius:4px;margin-bottom:4px;cursor:pointer;transition:background .2s}.row:hover{background:rgba(0,212,255,.08)}.avatar{width:24px;height:24px;border-radius:50%;background:linear-gradient(135deg,#ff6b00,#ffb800);display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:#000}.info{flex:1}.name{font-size:9px;font-weight:500;color:#b0c0d8}.email{font-size:7px;color:#506080}.add{position:absolute;bottom:10px;right:10px;width:28px;height:28px;background:linear-gradient(135deg,#ff6b00,#ffb800);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;cursor:pointer;box-shadow:0 4px 12px rgba(255,107,0,.3)}</style></head><body><div class='crm'><div class='hdr'><div class='logo'>MINI CRM</div><div class='live'><div class='dot'></div>LIVE</div></div><div class='body'><div class='sid'><div class='si on'>Dashboard</div><div class='si'>Contacts</div><div class='si'>Deals</div><div class='sect'>Analytics</div></div><div class='main'><div class='kpi-row'><div class='kpi blue'><div class='kpi-val'>1,247</div><div class='kpi-lbl'>Contacts</div></div><div class='kpi amber'><div class='kpi-val'>$48.2K</div><div class='kpi-lbl'>Revenue</div></div><div class='kpi green'><div class='kpi-val'>89%</div><div class='kpi-lbl'>Retention</div></div></div><div class='row'><div class='avatar'>JD</div><div class='info'><div class='name'>John Doe</div><div class='email'>john@company.com</div></div></div><div class='row'><div class='avatar'>SA</div><div class='info'><div class='name'>Sarah Adams</div><div class='email'>sarah@startup.io</div></div></div></div></div><div class='add'>+</div></div></body></html>"></iframe>
         <span class="demo-badge">INTERACTIVE</span>
       </div>
       <div class="demo-info">
-        <div class="demo-name">Offline Mini CRM</div>
-        <div class="demo-desc">Full contact management system with admin panel, deal tracking, and analytics dashboard.</div>
+        <div class="demo-name">Mini CRM Dashboard</div>
+        <div class="demo-desc">Full contact management system with KPI tracking, deal pipelines, and analytics dashboard.</div>
       </div>
     </div>
 
@@ -574,12 +481,12 @@ footer{padding:50px 48px;border-top:1px solid rgba(255,184,0,.06);text-align:cen
     <div class="demo-card">
       <div class="demo-preview">
         <div class="demo-glow"></div>
-        <iframe class="demo-frame" src="portfolio media/interactive demos/BlackBox Quote and Contract Generator/index.html"></iframe>
+        <iframe class="demo-frame" srcdoc="<!DOCTYPE html><html><head><meta charset='UTF-8'><style>*{box-sizing:border-box;margin:0;padding:0}body{background:#0d1525;font-family:system-ui,sans-serif;color:#c5d4e8;padding:12px;height:220px;overflow:hidden}.book{background:linear-gradient(160deg,#041218,#081C28);border-radius:8px;height:100%;display:flex;flex-direction:column}.hdr{padding:12px 14px;border-bottom:1px solid rgba(0,232,122,.1);display:flex;justify-content:space-between;align-items:center}.logo{font-size:11px;font-weight:700;letter-spacing:2px;color:#00e87a}.steps{display:flex;gap:6px}.step{font-size:7px;padding:4px 10px;border-radius:12px;background:rgba(255,255,255,.05);color:#607090}.step.active{background:rgba(0,232,122,.15);color:#00e87a}.step.done{background:rgba(0,232,122,.25);color:#00e87a}.body{flex:1;padding:14px;display:flex;flex-direction:column;gap:12px}.svc{font-size:9px;font-weight:500;color:#a0b8cc;margin-bottom:2px}.btns{display:grid;grid-template-columns:1fr 1fr;gap:6px}.btnn{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:6px;padding:10px;font-size:9px;color:#a0b8cc;text-align:center;cursor:pointer;transition:all .2s}.btnn:hover,.btnn.sel{border-color:#00e87a;background:rgba(0,232,122,.08);color:#00e87a}.date{display:flex;gap:4px;flex-wrap:wrap}.day{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:4px;padding:6px 10px;font-size:8px;color:#a0b8cc;text-align:center;cursor:pointer}.day:hover,.day.sel{background:#00e87a;color:#000}.time{display:flex;gap:4px;flex-wrap:wrap}.t{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:4px;padding:5px 8px;font-size:8px;color:#a0b8cc;text-align:center;cursor:pointer}.t:hover,.t.sel{background:#00e87a;color:#000}.continue{background:linear-gradient(135deg,#00e87a,#00a854);border:none;border-radius:6px;padding:12px;font-size:10px;font-weight:600;color:#fff;cursor:pointer;margin-top:auto;text-align:center}</style></head><body><div class='book'><div class='hdr'><div class='logo'>QUOTE</div><div class='steps'><div class='step done'>Service</div><div class='step active'>2</div><div class='step'>Review</div></div></div><div class='body'><div class='svc'>SELECT SERVICE</div><div class='btns'><div class='btnn sel'>Web Design</div><div class='btnn'>Logo Design</div><div class='btnn'>Video Edit</div><div class='btnn'>Full Brand</div></div><div class='svc'>DATE</div><div class='date'><div class='day sel'>Mon 12</div><div class='day'>Tue 13</div><div class='day'>Wed 14</div></div><div class='svc'>TIME</div><div class='time'><div class='t'>9AM</div><div class='t sel'>11AM</div><div class='t'>2PM</div></div><div class='continue'>CONTINUE →</div></div></body></html>"></iframe>
         <span class="demo-badge">INTERACTIVE</span>
       </div>
       <div class="demo-info">
         <div class="demo-name">Quote & Contract Generator</div>
-        <div class="demo-desc">Generate professional quotes and contracts with customizable templates.</div>
+        <div class="demo-desc">Generate professional quotes and contracts with customizable service templates.</div>
       </div>
     </div>
 
@@ -587,12 +494,12 @@ footer{padding:50px 48px;border-top:1px solid rgba(255,184,0,.06);text-align:cen
     <div class="demo-card">
       <div class="demo-preview">
         <div class="demo-glow"></div>
-        <iframe class="demo-frame" src="portfolio media/interactive demos/blackboxai/blackbox ai.html"></iframe>
+        <iframe class="demo-frame" srcdoc="<!DOCTYPE html><html><head><meta charset='UTF-8'><style>*{box-sizing:border-box;margin:0;padding:0}body{background:#0d1525;font-family:system-ui,sans-serif;color:#c5d4e8;padding:0;height:220px;overflow:hidden}.ai{background:linear-gradient(160deg,#030810,#080818);height:100%;display:flex;flex-direction:column}.hdr{background:rgba(0,0,0,.3);padding:10px 14px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(123,47,255,.1)}.logo{font-size:11px;font-weight:700;letter-spacing:2px;background:linear-gradient(90deg,#7B2FFF,#00D4FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.stat{font-size:8px;color:#00e87a}.msgs{flex:1;padding:10px;overflow-y:auto;display:flex;flex-direction:column;gap:8px}.msg{display:flex;gap:6px;max-width:90%}.msg.ai{align-self:flex-start}.msg.user{align-self:flex-end;flex-direction:row-reverse}.avatar{width:20px;height:20px;border-radius:50%;background:linear-gradient(135deg,#7B2FFF,#00D4FF);display:flex;align-items:center;justify-content:center;font-size:8px;color:#fff;flex-shrink:0}.bubble{background:rgba(255,255,255,.05);border-radius:10px;padding:8px 12px;font-size:8px;line-height:1.4}.msg.user .bubble{background:rgba(123,47,255,.2);border:1px solid rgba(123,47,255,.2)}.input{padding:10px;border-top:1px solid rgba(255,255,255,.05);display:flex;gap:6px}.inp{flex:1;background:rgba(255,255,255,.05);border:none;border-radius:16px;padding:8px 12px;font-size:8px;color:#c0d4e8;outline:none}.qs{display:flex;gap:4px;padding:0 10px 10px;flex-wrap:wrap}.q{font-size:7px;padding:5px 10px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;color:#607090;cursor:pointer;transition:all .2s}.q:hover{background:rgba(123,47,255,.1);border-color:rgba(123,47,255,.3);color:#c0d4e8}.send{width:28px;height:28px;background:linear-gradient(135deg,#7B2FFF,#00D4FF);border:none;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:10px;cursor:pointer}</style></head><body><div class='ai'><div class='hdr'><div class='logo'>BLACKBOX AI</div><div class='stat'>● Online</div></div><div class='msgs'><div class='msg ai'><div class='avatar'>AI</div><div class='bubble'>Hello! How can I help you today?</div></div></div><div class='qs'><div class='q'>Web Design</div><div class='q'>Logo Ideas</div><div class='q'>Pricing</div><div class='q'>Get Quote</div></div><div class='input'><input class='inp' placeholder='Type a message...'><button class='send'>→</button></div></div></body></html>"></iframe>
         <span class="demo-badge">INTERACTIVE</span>
       </div>
       <div class="demo-info">
         <div class="demo-name">BlackBox AI Assistant</div>
-        <div class="demo-desc">AI-powered assistant for BlackBox templates and Notion workflows with localStorage.</div>
+        <div class="demo-desc">AI-powered assistant for BlackBox templates and Notion workflows with localStorage support.</div>
       </div>
     </div>
   </div>
