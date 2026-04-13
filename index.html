@@ -41,7 +41,68 @@ body{background:var(--blue);color:var(--text);font-family:'Exo 2',sans-serif;ove
   .brow { grid-template-columns: 1fr; gap: 15px; }
   .bfi, .bfs, .bfta { padding: 15px; font-size: 16px; }
   
-  footer { flex-direction: column; text-align: center; padding: 40px 20px; }
+  footer { flex-direction: column !important; text-align: center; padding: 40px 20px; }
+  
+  /* Vertical Layouts for Mobile */
+  .hbtns { flex-direction: column !important; width: 100% !important; max-width: 320px !important; margin: 36px auto 0 !important; }
+  .btn-p, .btn-o { width: 100% !important; justify-content: center !important; margin-bottom: 10px; }
+  .pc-lbl { flex-direction: column !important; gap: 8px !important; text-align: center !important; }
+  .bk-note { flex-direction: column !important; align-items: center !important; text-align: center !important; gap: 15px !important; }
+  .bi-con { justify-content: center !important; }
+  .work-grid { gap: 40px !important; display: flex !important; flex-direction: column !important; }
+  .wrow, .wrow.c2, .wrow.c3, .wrow.c21, .wrow.c12 { 
+    display: flex !important; 
+    flex-direction: column !important; 
+    width: 100% !important;
+    gap: 40px !important; 
+    grid-template-columns: 1fr !important;
+  }
+  .pc-frame { width: 100% !important; max-width: 100% !important; height: auto !important; aspect-ratio: 16/9; }
+  .pc-label { width: 100% !important; padding: 20px !important; }
+  
+  .bk-shell { 
+    display: flex !important; 
+    flex-direction: column !important; 
+    grid-template-columns: 1fr !important; 
+    width: 100% !important;
+  }
+  .bk-info { border-right: none !important; border-bottom: 1px solid rgba(255,184,0,.06) !important; padding: 30px 15px !important; width: 100% !important; }
+  .bk-form-side { width: 100% !important; }
+  .brow { 
+    display: flex !important; 
+    flex-direction: column !important; 
+    grid-template-columns: 1fr !important; 
+    gap: 15px !important; 
+    width: 100% !important;
+  }
+  
+  /* Footer links vertical */
+  .footer-links { flex-direction: column !important; align-items: center !important; gap: 10px !important; width: 100% !important; }
+  footer { gap: 30px !important; }
+  
+  /* Navigation Fixes */
+  .nav-links { display: none !important; } /* Simplify nav for mobile if it's messy */
+  .nav-cta { display: none; }
+  nav { justify-content: center !important; }
+
+/* Game Scaling for Mobile */
+  #game #player { font-size: 20px; bottom: 15px !important; }
+  #game .bubble { font-size: 9px !important; padding: 4px 8px !important; white-space: normal !important; max-width: 80px; text-align: center; }
+  #game #client { font-size: 18px !important; }
+  #game #healthbar { width: 120px !important; left: 90px !important; }
+  #game #score, #game #level { font-size: 9px !important; }
+  #game { height: 260px !important; }
+
+  /* MOBILE ARROW CONTROLS */
+  .mobile-controls { display: flex !important; }
+  
+  /* Portfolio Expansion Button */
+  .portfolio-expand { display: flex !important; margin-top: 30px !important; }
+
+  /* Nav Actions Mobile */
+  .nav-actions { flex-direction: column; gap: 8px !important; width: 100%; }
+  .nav-emp { font-size: 7px !important; padding: 6px 12px !important; }
+  .nav-cta { font-size: 8px !important; padding: 8px 16px !important; }
 }
 .scan{position:fixed;inset:0;z-index:9990;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(0,0,0,.04) 0,rgba(0,0,0,.04) 1px,transparent 1px,transparent 3px)}
 /* HUD BOOT */
@@ -102,6 +163,11 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .nav-links a:hover{color:var(--gold)}.nav-links a:hover::after{width:100%}
 .nav-cta{background:transparent;border:1px solid var(--gold);color:var(--gold);font-family:'Orbitron',monospace;font-size:9px;letter-spacing:2px;padding:10px 22px;cursor:none;text-transform:uppercase;transition:all .3s;clip-path:polygon(6px 0%,100% 0%,calc(100% - 6px) 100%,0% 100%)}
 .nav-cta:hover{background:var(--gold);color:#000;box-shadow:0 0 20px rgba(255,184,0,.4)}
+.nav-actions{display:flex;align-items:center;gap:12px}
+.nav-emp{background:linear-gradient(135deg,rgba(0,212,255,.12),rgba(0,180,255,.06));border:1px solid rgba(0,212,255,.4);color:var(--cyan);font-family:'Orbitron',monospace;font-size:8px;letter-spacing:1px;padding:8px 16px;text-transform:uppercase;text-decoration:none;transition:all .3s;border-radius:3px;position:relative;overflow:hidden}
+.nav-emp:hover{background:linear-gradient(135deg,rgba(0,212,255,.25),rgba(0,180,255,.15));box-shadow:0 0 20px rgba(0,212,255,.4);border-color:var(--cyan)}
+.nav-emp::after{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.2),transparent);transition:left .5s}
+.nav-emp:hover::after{left:100%}
 section{position:relative;z-index:1}
 /* HERO */
 #hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:120px 24px 0;position:relative;overflow:hidden}
@@ -414,6 +480,26 @@ section{position:relative;z-index:1}
 @keyframes expPiece{0%{transform:translate(0,0) scale(1);opacity:1}100%{transform:translate(var(--tx),var(--ty)) scale(0);opacity:0}}
 #game #gameover{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;font-size:28px;color:#ff0000;text-shadow:0 0 20px #ff0000,0 0 40px #ff8800;font-family:'Share Tech Mono',monospace;display:none;z-index:100}
 #game #restart{font-size:14px;color:#00eaff;margin-top:15px;cursor:pointer;text-decoration:underline}
+
+/* MOBILE CONTROLS */
+.mobile-controls{position:fixed;bottom:20px;left:0;right:0;z-index:200;display:none;justify-content:space-between;padding:0 20px;pointer-events:none}
+.mobile-btn{width:70px;height:70px;background:rgba(0,212,255,.15);border:2px solid rgba(0,212,255,.5);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;color:#00eaff;pointer-events:auto;touch-action:none;cursor:pointer;transition:all .15s;box-shadow:0 0 20px rgba(0,212,255,.3)}
+.mobile-btn:active{transform:scale(.92);background:rgba(0,212,255,.35);box-shadow:0 0 35px rgba(0,212,255,.6)}
+.mobile-btn.left{background:rgba(255,107,0,.15);border-color:rgba(255,107,0,.5);color:#ff8800;box-shadow:0 0 20px rgba(255,107,0,.3)}
+.mobile-btn.left:active{background:rgba(255,107,0,.35);box-shadow:0 0 35px rgba(255,107,0,.6)}
+
+/* PORTFOLIO EXPAND BUTTON */
+.portfolio-expand{display:none;justify-content:center;padding:20px 0}
+.portfolio-btn{display:inline-flex;align-items:center;gap:12px;background:linear-gradient(135deg,rgba(0,212,255,.08),rgba(0,160,255,.04));border:1px solid rgba(0,212,255,.25);color:var(--cyan);font-family:'Orbitron',monospace;font-size:11px;font-weight:600;letter-spacing:2px;padding:18px 36px;text-transform:uppercase;text-decoration:none;transition:all .4s;border-radius:4px;position:relative;overflow:hidden;cursor:pointer}
+.portfolio-btn::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,212,255,.15),rgba(0,160,255,.08));opacity:0;transition:opacity .3s}
+.portfolio-btn:hover::before{opacity:1}
+.portfolio-btn:hover{border-color:rgba(0,212,255,.5);box-shadow:0 0 30px rgba(0,212,255,.25),0 8px 40px rgba(0,0,0,.3);transform:translateY(-3px)}
+.portfolio-btn span{position:relative;z-index:1}
+.portfolio-btn-icon{font-size:16px;position:relative;z-index:1}
+.portfolio-btn-glow{position:absolute;inset:0;background:radial-gradient(circle at 50% 50%,rgba(0,212,255,.2),transparent 70%);opacity:0;transition:opacity .4s}
+.portfolio-btn:hover .portfolio-btn-glow{opacity:1}
+.portfolio-btn-shine{position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.15),transparent);transition:left .6s}
+.portfolio-btn:hover .portfolio-btn-shine{left:100%}
 .bk-note{background:rgba(0,212,255,.04);border:1px solid rgba(0,212,255,.1);padding:14px 18px;display:flex;align-items:flex-start;gap:10px;border-bottom:none}
 .bk-note-ico{color:var(--cyan);font-size:13px;flex-shrink:0;margin-top:1px}
 .bk-note-txt{font-family:'Share Tech Mono',monospace;font-size:9px;color:rgba(0,212,255,.65);line-height:1.9;letter-spacing:1px}
@@ -541,7 +627,10 @@ footer{padding:38px 48px;border-top:1px solid rgba(255,184,0,.06);display:flex;a
     <li><a href="#work">Work</a></li>
     <li><a href="#booking">Contact</a></li>
   </div>
-  <button class="nav-cta" onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})">Book a Project</button>
+  <div class="nav-actions">
+    <a href="https://yamasseetechnologyemployee.designsbynateh3.workers.dev/" target="_blank" rel="noopener" class="nav-emp">Employee Login</a>
+    <button class="nav-cta" onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})">Book a Project</button>
+  </div>
 </nav>
 
 <!-- HERO -->
@@ -1683,6 +1772,17 @@ function showPanel(i,el){
     </div>
   </div>
 
+  <!-- PORTFOLIO EXPAND BUTTON -->
+  <div class="portfolio-expand">
+    <a href="portfolio.html" class="portfolio-btn">
+      <span class="portfolio-btn-glow"></span>
+      <span class="portfolio-btn-shine"></span>
+      <span class="portfolio-btn-icon">◈</span>
+      <span>Experience More Samples Here</span>
+      <span class="portfolio-btn-icon">◈</span>
+    </a>
+  </div>
+
   </section>
 
 <!-- BOOKING -->
@@ -1737,13 +1837,18 @@ function showPanel(i,el){
     bubble.style.top=top+5+"px"
     if(top>330){
     let bx=bubble.offsetLeft
-    if(Math.abs(bx-playerX)<55){health-=15; healthBar.style.width=health+"%"; coinBurst(); screenShake(); if(health<=0)explode()}
+    let threshold = window.innerWidth <= 900 ? 40 : 55;
+    if(Math.abs(bx-playerX)<threshold){health-=15; healthBar.style.width=health+"%"; coinBurst(); screenShake(); if(health<=0)explode()}
     bubble.remove()
     clearInterval(fall)
     }
-    },20)
+    }, 16);
     }
-    function screenShake(){game.style.transform="translateX(4px)"; setTimeout(()=>game.style.transform="translateX(-4px)",50); setTimeout(()=>game.style.transform="translateX(0)",100)}
+    function screenShake() {
+      game.style.transform = "translateX(4px)";
+      setTimeout(() => game.style.transform = "translateX(-4px)", 50);
+      setTimeout(() => game.style.transform = "translateX(0)", 100);
+    }
     function explode(){
       running=false
       let px=player.offsetLeft
@@ -1794,21 +1899,64 @@ function showPanel(i,el){
       speech.style.display="none"
       game.querySelectorAll('.bubble').forEach(b=>b.remove())
     }
-    document.addEventListener("keydown",e=>{
-      if(document.getElementById("gameover").style.display==="block"){restart();running=true;document.getElementById("gameover").style.display="none"}
-      else if(!running&&game.style.display!=="none"){running=true; start.style.display="none"}
-      else{
-        if(e.key==="ArrowLeft"||e.key==="a")playerX-=30
-        if(e.key==="ArrowRight"||e.key==="d")playerX+=30
-        if(level===2){if(e.key==="ArrowUp")playerY-=30; if(e.key==="ArrowDown")playerY+=30}
-        let gameWidth = game.offsetWidth;
-        let gameHeight = game.offsetHeight;
-        playerX=Math.max(0,Math.min(gameWidth - 40,playerX))
-        playerY=Math.max(40,Math.min(gameHeight - 60,playerY))
-        player.style.left=playerX+"px"
-        player.style.top=playerY+"px"
+    // GAME SETTINGS - Delta time based movement for consistent speed across devices
+    const SPEED_MULTIPLIER = 0.4;
+    let lastTime = 0;
+    let keysPressed = { left: false, right: false, up: false, down: false };
+    
+    function gameLoop(timestamp) {
+      if (!running) return;
+      if (!lastTime) lastTime = timestamp;
+      const deltaTime = (timestamp - lastTime) / 16.67;
+      lastTime = timestamp;
+      
+      const moveSpeed = 1.8 * SPEED_MULTIPLIER * Math.min(deltaTime, 2.5);
+      
+      if (keysPressed.left) playerX -= moveSpeed * 30;
+      if (keysPressed.right) playerX += moveSpeed * 30;
+      if (level === 2) {
+        if (keysPressed.up) playerY -= moveSpeed * 30;
+        if (keysPressed.down) playerY += moveSpeed * 30;
       }
-    })
+      
+      const gameWidth = game.offsetWidth;
+      const gameHeight = game.offsetHeight;
+      playerX = Math.max(0, Math.min(gameWidth - 40, playerX));
+      playerY = Math.max(40, Math.min(gameHeight - 60, playerY));
+      player.style.left = playerX + "px";
+      player.style.top = playerY + "px";
+      
+      requestAnimationFrame(gameLoop);
+    }
+    
+    document.addEventListener("keydown", e => {
+      if (document.getElementById("gameover").style.display === "block") {
+        restart();
+        running = true;
+        lastTime = 0;
+        document.getElementById("gameover").style.display = "none";
+        requestAnimationFrame(gameLoop);
+      } else if (!running && game.style.display !== "none") {
+        running = true;
+        lastTime = 0;
+        start.style.display = "none";
+        requestAnimationFrame(gameLoop);
+      } else {
+        if (e.key === "ArrowLeft" || e.key === "a") keysPressed.left = true;
+        if (e.key === "ArrowRight" || e.key === "d") keysPressed.right = true;
+        if (level === 2) {
+          if (e.key === "ArrowUp") keysPressed.up = true;
+          if (e.key === "ArrowDown") keysPressed.down = true;
+        }
+      }
+    });
+    
+    document.addEventListener("keyup", e => {
+      if (e.key === "ArrowLeft" || e.key === "a") keysPressed.left = false;
+      if (e.key === "ArrowRight" || e.key === "d") keysPressed.right = false;
+      if (e.key === "ArrowUp") keysPressed.up = false;
+      if (e.key === "ArrowDown") keysPressed.down = false;
+    });
     
     // TOUCH CONTROLS
     game.addEventListener("touchstart", e => {
@@ -1869,7 +2017,8 @@ function showPanel(i,el){
     speech.style.left=cx-10+"px"; speech.style.top=cy-20+"px"
     setTimeout(()=>speech.style.display="none",900)
     }
-    if(Math.abs(px-cx)<20&&Math.abs(py-cy)<20){explode()}
+    let threshold2 = window.innerWidth <= 900 ? 15 : 20;
+    if(Math.abs(px-cx)<threshold2&&Math.abs(py-cy)<threshold2){explode()}
     let gameWidth = game.offsetWidth;
     if(px > gameWidth - 40)victory()
     },40)
@@ -2025,6 +2174,18 @@ function anim(){
 const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('vis')}),{threshold:.07});
 document.querySelectorAll('.reveal,.svc-card,.pc,.fl,.fr').forEach(el=>io.observe(el));
 
+// MOBILE CONTROLS
+const mobileControls = document.querySelector('.mobile-controls');
+if (mobileControls) {
+  const leftBtn = mobileControls.querySelector('.mobile-btn.left');
+  const rightBtn = mobileControls.querySelector('.mobile-btn.right');
+  
+  leftBtn.addEventListener('touchstart', (e) => { e.preventDefault(); keysPressed.left = true; if(!running && game.style.display !== 'none'){running=true; start.style.display='none'; requestAnimationFrame(gameLoop)}});
+  leftBtn.addEventListener('touchend', (e) => { e.preventDefault(); keysPressed.left = false; });
+  rightBtn.addEventListener('touchstart', (e) => { e.preventDefault(); keysPressed.right = true; if(!running && game.style.display !== 'none'){running=true; start.style.display='none'; requestAnimationFrame(gameLoop)}});
+  rightBtn.addEventListener('touchend', (e) => { e.preventDefault(); keysPressed.right = false; });
+}
+
 // PARALLAX
 window.addEventListener('scroll',()=>{
   const s=window.scrollY;
@@ -2048,6 +2209,11 @@ document.getElementById('bookingForm')?.addEventListener('submit',function(e){
 });
 </script>
 
+<!-- MOBILE CONTROLS -->
+<div class="mobile-controls">
+  <button class="mobile-btn left">◀</button>
+  <button class="mobile-btn right">▶</button>
+</div>
 
 </body>
 </html>
